@@ -33,7 +33,6 @@
 
       }
       section {
-        background-color: #eef0ff;
         width: 30rem;
         display: flex;
         margin: 0 auto;
@@ -49,7 +48,8 @@
         text-align: center;
       }
       .score {
-        background-color: #462ad7;
+        background: rgb(70,42,215);
+background: radial-gradient(circle, rgb(74, 42, 236) 100%, rgba(76,61,200,1) 100%);
         border-radius: 50%;
         padding: 40px 0px;
         margin: 0px 30px;
@@ -153,8 +153,52 @@ background-color: #EEF0FF;
         position: relative;
         margin-left: 20px;
         top: 1rem;
+        width: 12rem;
 
       }
+      .btn:hover{
+        background-color: #4A36F3;
+        border-radius: 25px;
+        border: 1px solid #4A36F3;
+
+      }
+       @media screen and (max-width: 500px){
+        section{
+          display: block;
+          position: relative;
+          top: 0;
+        }
+        .left{
+          width: 100%;
+          border-radius: 0;
+          border-bottom-left-radius: 10%;
+          border-bottom-right-radius: 10%;
+          padding: 5px;
+        }
+        .right{
+          width: 100%;
+        }
+        .score {
+          margin: 0px 152px
+      }
+         .message1 {
+          display: inline;
+       
+       left: 12rem;
+      }
+      .message2 {
+        color: #bab8ff;
+        margin: 9px 98px;
+        ;
+        padding: 10px;
+       
+      }
+        
+       }
+   
+      
+
+
      
     </style>
   </head>

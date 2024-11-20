@@ -1,109 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .left{
-      width: 15rem;
-      background-color: #5F3FFC;
-      color: white;
-      border-radius: 10%;
-    }
-    .right{
-      width: 15rem;
+    <title>Frontend Mentor | Results summary component</title>
 
-      background-color: #EEF0FF;
-    }
-    section{
-      background-color: #EEF0FF;
-      width: 30rem;
-      display: flex;
-      margin: 0 auto;
-      position: relative;
-      top: 8rem;
-    }
-    .title{
-      font-size: 20px;
-      font-weight: 300;
-      text-align: center;
-    }
-    .text-center{
-      text-align: center;
-    }
-    .score{
-    
-      background-color:#462AD7 ;
-      border-radius: 50%;
-      padding: 50px 0px;
-      margin: 0px 30px;
-    }
-    .figure{
-      font-size: 50px;
-      font-weight: 700;
-      margin: 0px;
-    }
-  </style>
-</head>
-<body>
-  <section>
-    <div class="left">
-    <p class="title">Your Result</p>
-    <div class="score">
-      <p class="figure text-center">76</p>
-      <p class="text-center">of 100</p>
-    </div>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .left {
+        width: 15rem;
+        background-color: #5f3ffc;
+        color: white;
+        border-radius: 10%;
+      }
+      .right {
+        width: 15rem;
+
+        background-color: #FFFFFF;
+        border: 1px solid lightblue;
+        border-radius: 10%;
+        
+
+
+      }
+      section {
+        background-color: #eef0ff;
+        width: 30rem;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        top: 8rem;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .score {
+        background-color: #462ad7;
+        border-radius: 50%;
+        padding: 40px 0px;
+        margin: 0px 30px;
+      }
+      .figure {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0px;
+      }
+      .message1 {
+        display: inline;
+        font-size: 30px;
+        position: relative;
+        left: 90px;
+      }
+      .message2 {
+        color: #bab8ff;
+        margin: 18px;
+      }
+      .total {
+        display: inline;
+        color: #bab8ff;
+        margin-left: 70px;
+      }
+      .right h2 {
+        color: #2b2d41;
+        display: inline;
+        position: relative;
+        left: 17px;
+        top: 10px;
+      }
+      .feature{
+        display: inline-flex;
+        border-radius: 10%;
+        margin: 0px 18px;
+        padding: 0 20px
+
+
+      }
+      .f1{
+        background-color: #FFF6F5;
+        margin-top: 20px;
+     
+      }
+      .f2{
+        background-color: #FFFBF2;
       
 
-      <p class="text-center">Great</p>
-      <p class="text-center">You scored higher than 65% of the people who have taken these tests.</p>
-    </div>
-    <div class="right"> 
-      <h2>Summary</h2>
-      <p>Reaction</p>
-      <p>80 / 100</p>
-      <p>Memory</p>
-      <p>92 / 100</p>
-      <p>Verbal</p>
-      <p>61 / 100</p>
-      <p>Visual</p>
-      <p>72 / 100</p>
-      <button>Continue</button>
-    </div>
-  </section>
-</body>
+
+
+      }
+      .f3{
+        background-color:#F2FBFA ;
+
+      }
+      .f4{
+background-color: #EEF0FF;
+      }
+      .text1{
+        color: #EC8484;
+        margin-left: 15px;
+       
+      }
+      .text2{
+        color: #E1C77A;
+        margin-left: 15px;
+
+
+      }
+      .text3{
+        color: #6FB4A4;
+        margin-left: 15px;
+        margin-right: 15px;
+
+
+      }
+      .text4{
+        color: #484C86;
+        margin-left: 15px;
+        margin-right: 15px;
+
+
+
+      }
+      .number1{
+        font-weight: bold;
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+
+      }
+      .number2{
+        font-weight: 100;
+
+      }
+      .btn{
+        background-color: #303B59;
+        color: white;
+        border-radius: 25px;
+        padding: 10px 40px;
+        position: relative;
+        margin-left: 20px;
+        top: 1rem;
+
+      }
+     
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="left">
+        <p class="title">Your Result</p>
+        <div class="score">
+          <p class="figure text-center">76</p>
+          <p class="total text-center">of 100</p>
+        </div>
+
+        <p class="message1 text-center">Great</p>
+        <p class="message2 text-center">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="right">
+        <h2>Summary</h2>
+        <div class="feature f1">
+          <img style="margin-left: 3px;" src="/assets/images/icon-reaction.svg" alt="">
+          <p class="text1">Reaction</p>
+        <div class="number1">80 <span class="number2">/ 100</span></div>
+        </div>
+        <div class="feature f2">
+          <img style="margin-left: 3px;" src="assets/images/icon-memory.svg" alt="">
+          <p class="text2">Memory</p>
+        <div class="number1">92 <span class="number2">/ 100</span></div>
+          
+        </div>
+        <div class="feature f3">
+          <img style="margin-left: 3px;" src="assets/images/icon-verbal.svg" alt="">
+          <p class="text3">Verbal</p>
+        <div class="number1">61 <span class="number2">/ 100</span></div>
+         
+        </div>
+
+        <div class="feature f4">
+          <img style="margin-left: 3px;" src="assets/images/icon-visual.svg" alt="">
+          <p class="text4">Visual</p>
+        <div class="number1">72 <span class="number2">/ 100</span></div>
+          
+        </div>
+
+        <button class="btn"> Continue</button>
+      </div>
+    </section>
+  </body>
 </html>
 
-  <!-- Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->

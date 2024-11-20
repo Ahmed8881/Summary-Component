@@ -162,11 +162,14 @@ background-color: #EEF0FF;
         border: 1px solid #4A36F3;
 
       }
-       @media screen and (max-width: 500px){
+       @media screen and (max-width: 450px){
         section{
           display: block;
           position: relative;
+
           top: 0;
+          overflow: hidden;
+          
         }
         .left{
           width: 100%;
@@ -174,25 +177,56 @@ background-color: #EEF0FF;
           border-bottom-left-radius: 10%;
           border-bottom-right-radius: 10%;
           padding: 5px;
+          height: 28rem;
+
         }
         .right{
           width: 100%;
+          display: block;
+          border: none;
+
+        }
+       .title{
+        padding-top: 2rem;
+       }
+        .feature{
+          display: flex;
+    border-radius: 10px;
+    margin: 18px 56px;
+    padding: 0 20px;
+        }
+        .right h2{
+          position: relative;
+          left: 3rem;
+          top: 1rem;
         }
         .score {
           margin: 0px 152px
       }
          .message1 {
           display: inline;
-       
-       left: 12rem;
+       top: 1rem;
+       left: 13rem;
       }
       .message2 {
         color: #bab8ff;
-        margin: 9px 98px;
-        ;
+        margin: 31px 98px;
+        font-size: 23px;
+        
         padding: 10px;
+        
        
       }
+      .btn {
+    background-color: #303B59;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 0px;
+    position: relative;
+    margin-left: 56px;
+    top: 0rem;
+    width: 24rem;
+}
         
        }
    
